@@ -7,7 +7,7 @@ import TechPrep from './components/TechPrep';
 import DesignLab from './components/DesignLab';
 import SummerIntern from './components/SummerIntern';
 import MiniProjects from './components/MiniProjects';
-import Footer from './components/Footer';
+import Footer from './components/footer';
 import SignUpPage from './components/SignUpPage';
 import SignInPage from './components/SignInPage'; 
 import Dashboard from './components/Dashboard';
