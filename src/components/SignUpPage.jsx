@@ -23,8 +23,9 @@ export default function SignUpPage() {
     e.preventDefault();
     setErrorMsg('');
     setSuccessMsg('');
+    const API = import.meta.env.VITE_API_URL;
     try {
-      const response = await axios.post('http://localhost:3000/api/user/signup', form);
+      const response = await axios.post(`${API}/api/user/signup`, form);
       setSuccessMsg(response.data.message || 'Account created successfully!');
       // Store token and name in localStorage
       localStorage.setItem('token', response.data.token);

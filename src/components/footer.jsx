@@ -14,7 +14,9 @@ const Footer = () => {
             </div>
             <p className="text-gray-300 mb-4">
               Empowering tomorrow’s tech pros with hands-on training and real-world projects.
-            </p>
+              
+            </p> 
+
             <div className="flex space-x-4">
               <a href="#" className="text-gray-300 hover:text-white transition-colors">
                 <Github className="h-5 w-5" />

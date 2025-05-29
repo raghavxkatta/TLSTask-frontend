@@ -22,10 +22,11 @@ export default function SignInPage() {
     setErrors({});
     setSuccessMsg('');
 
+    const API = import.meta.env.VITE_API_URL;
     try {
-      const response = await axios.post('http://localhost:3000/api/user/signin', {
-        email,
-        password
+      const response = await axios.post(`${API}/api/users/login`, {
+  email,
+  password,
       });
 
       setSuccessMsg(response.data.message || 'Login successful!');
